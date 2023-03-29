@@ -13,6 +13,7 @@ connectDB()
 app.use(express.json())
 const cookieParser = require("cookie-parser")
 const { adminProtected } = require("./middlewares/auth")
+app.use(express.static(path.join(__dirname, "dist")))
 app.use(express.static(path.join(__dirname, "public")))
 app.use(log)
 
@@ -34,12 +35,12 @@ app.use(cors({
         }
     }
 }))
-app.use("/user", require("./routes/userRouters"))
-app.use("/cart", require("./routes/cartRoutes"))
-app.use("/order", require("./routes/orderRoutes"))
-app.use("/employee", adminProtected, require("./routes/employeeRoute"))
-app.use("/auth", require("./routes/authRoute"))
-app.use("/products", require("./routes/productsRoute"))
+app.use("/api/user", require("./routes/userRouters"))
+app.use("/api/cart", require("./routes/cartRoutes"))
+app.use("/api/order", require("./routes/orderRoutes"))
+app.use("/api/employee", adminProtected, require("./routes/employeeRoute"))
+app.use("/api/auth", require("./routes/authRoute"))
+app.use("/api/products", require("./routes/productsRoute"))
 
 app.use("*", (req, res) => {
     res.status(404).json({
