@@ -1,0 +1,136 @@
+24-03-2023 	 15:45:20	Error	Cannot set headers after they are sent to the client	POST	/auth/user/login-with-google	http://localhost:5173
+24-03-2023 	 15:38:03	Error	Cannot set headers after they are sent to the client	POST	/auth/user/login-with-google	http://localhost:5173
+24-03-2023 	 15:35:29	Error	Cannot set headers after they are sent to the client	POST	/auth/user/login-with-google	http://localhost:5173
+24-03-2023 	 15:34:44	Error	Cannot set headers after they are sent to the client	POST	/auth/user/login-with-google	http://localhost:5173
+24-03-2023 	 14:50:54	TokenExpiredError	jwt expired	DELETE	/order/destroy	undefined
+19-03-2023 	 18:04:24	TokenExpiredError	jwt expired	DELETE	/order/destroy	undefined
+19-03-2023 	 16:46:21	MongoNetworkError	connection 7 to 15.207.253.157:27017 closed	POST	/auth/employee/login	http://localhost:5173
+19-03-2023 	 15:32:49	ReferenceError	EMAIL_PASSWORD is not defined	POST	/order/payment/verify	http://localhost:5173
+19-03-2023 	 15:30:55	ReferenceError	EMAIL_PASSWORD is not defined	POST	/order/payment/verify	http://localhost:5173
+19-03-2023 	 15:27:24	ValidationError	order validation failed: products.0.productId: Path `productId` is required.	POST	/order/order-placed	http://localhost:5173
+19-03-2023 	 15:26:35	ReferenceError	EMAIL_PASSWORD is not defined	POST	/order/payment/verify	http://localhost:5173
+15-03-2023 	 18:32:50	TokenExpiredError	jwt expired	DELETE	/order/destroy	undefined
+15-03-2023 	 18:28:32	JsonWebTokenError	jwt must be provided	DELETE	/products/destroy	undefined
+15-03-2023 	 18:03:29	JsonWebTokenError	jwt must be provided	POST	/products/add-product	undefined
+15-03-2023 	 15:37:40	JsonWebTokenError	invalid token	POST	/products/add-product	http://127.0.0.1:5173
+14-03-2023 	 15:20:14	JsonWebTokenError	jwt must be provided	GET	/user/profile	http://127.0.0.1:5173
+14-03-2023 	 15:17:42	JsonWebTokenError	jwt must be provided	GET	/user/profile	http://127.0.0.1:5173
+11-03-2023 	 16:59:15	CastError	Cast to ObjectId failed for value "{ id: '64041a9bdb6633e4d3f562f2' }" (type Object) at path "_id" for model "user"	POST	/auth/reset-password/	http://localhost:5173
+11-03-2023 	 16:58:10	CastError	Cast to ObjectId failed for value "{ id: '64041a9bdb6633e4d3f562f2' }" (type Object) at path "_id" for model "user"	POST	/auth/reset-password/	http://localhost:5173
+11-03-2023 	 16:03:17	ReferenceError	password is not defined	POST	/auth/user/login-with-google	http://localhost:5173
+11-03-2023 	 15:27:31	ReferenceError	password is not defined	POST	/auth/user/login-with-google	http://localhost:5173
+11-03-2023 	 15:26:48	ReferenceError	password is not defined	POST	/auth/user/login-with-google	http://localhost:5173
+11-03-2023 	 15:23:53	TypeError	User.create(...).lean is not a function	POST	/auth/user/login-with-google	http://localhost:5173
+11-03-2023 	 15:23:29	ReferenceError	password is not defined	POST	/auth/user/login-with-google	http://localhost:5173
+11-03-2023 	 15:21:57	ReferenceError	password is not defined	POST	/auth/user/login-with-google	http://localhost:5173
+11-03-2023 	 15:20:00	ReferenceError	password is not defined	POST	/auth/user/login-with-google	http://localhost:5173
+11-03-2023 	 15:18:42	ReferenceError	password is not defined	POST	/auth/user/login-with-google	http://localhost:5173
+11-03-2023 	 15:16:26	Error	Illegal arguments: number, number	POST	/auth/user/login-with-google	http://localhost:5173
+11-03-2023 	 15:14:46	Error	Illegal arguments: number, number	POST	/auth/user/login-with-google	http://localhost:5173
+09-03-2023 	 15:35:53	undefined	undefined	GET	/products	http://localhost:5173
+08-03-2023 	 15:25:12	TypeError	Cannot read properties of null (reading 'price')	POST	/order/payment/verify	http://127.0.0.1:5173
+08-03-2023 	 15:23:44	TypeError	Cannot read properties of null (reading 'price')	POST	/order/payment/verify	http://127.0.0.1:5173
+08-03-2023 	 15:21:24	TypeError	Assignment to constant variable.	POST	/order/payment/verify	http://127.0.0.1:5173
+08-03-2023 	 15:18:15	TypeError	Assignment to constant variable.	POST	/order/payment/verify	http://127.0.0.1:5173
+08-03-2023 	 15:10:03	TokenExpiredError	jwt expired	DELETE	/order/destroy	undefined
+08-03-2023 	 14:21:58	TokenExpiredError	jwt expired	GET	/cart/cart-history	http://127.0.0.1:5173
+06-03-2023 	 16:14:57	TypeError	Cannot read properties of null (reading 'products')	POST	/order/payment/verify	http://127.0.0.1:5173
+05-03-2023 	 14:33:19	undefined	undefined	GET	/products	http://127.0.0.1:5174
+05-03-2023 	 14:32:15	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:31:59	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:31:36	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:31:34	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:31:34	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:31:34	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:31:00	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:31:00	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:59	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:59	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:58	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:58	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:54	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:42	undefined	undefined	GET	/products	http://127.0.0.1:5174
+05-03-2023 	 14:30:28	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:27	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:27	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:24	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:22	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:22	undefined	undefined	OPTIONS	/auth/user/login	http://127.0.0.1:5174
+05-03-2023 	 14:30:00	undefined	undefined	GET	/products	http://127.0.0.1:5174
+05-03-2023 	 11:25:32	TypeError	Cannot read properties of null (reading 'products')	POST	/order/payment/verify	http://127.0.0.1:5173
+05-03-2023 	 10:07:02	TypeError	Cannot read properties of null (reading 'products')	POST	/order/payment/verify	http://127.0.0.1:5173
+05-03-2023 	 10:04:55	ReferenceError	User is not defined	POST	/order/payment/verify	http://127.0.0.1:5173
+05-03-2023 	 09:48:02	TokenExpiredError	jwt expired	GET	/cart/cart-history	http://127.0.0.1:5173
+05-03-2023 	 09:47:59	TokenExpiredError	jwt expired	POST	/cart/add-to-cart	http://127.0.0.1:5173
+05-03-2023 	 09:47:51	TokenExpiredError	jwt expired	POST	/cart/add-to-cart	http://127.0.0.1:5173
+05-03-2023 	 09:47:35	TokenExpiredError	jwt expired	GET	/cart/cart-history	http://127.0.0.1:5173
+04-03-2023 	 15:23:52	MongooseServerSelectionError	Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/	GET	/products	http://127.0.0.1:5173
+04-03-2023 	 15:23:31	MongooseServerSelectionError	Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/	GET	/products	http://127.0.0.1:5173
+04-03-2023 	 15:23:13	MongooseServerSelectionError	Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/	GET	/products	http://127.0.0.1:5173
+04-03-2023 	 15:22:45	MongooseServerSelectionError	Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/	GET	/cart/cart-history	http://127.0.0.1:5173
+03-03-2023 	 15:00:38	TokenExpiredError	jwt expired	GET	/cart/cart-history	http://127.0.0.1:5173
+03-03-2023 	 15:00:34	TokenExpiredError	jwt expired	GET	/cart/cart-history	http://127.0.0.1:5173
+03-03-2023 	 15:00:34	TokenExpiredError	jwt expired	GET	/cart/cart-history	http://127.0.0.1:5173
+03-03-2023 	 15:00:28	TokenExpiredError	jwt expired	GET	/cart/cart-history	http://127.0.0.1:5173
+03-03-2023 	 15:00:28	TokenExpiredError	jwt expired	GET	/cart/cart-history	http://127.0.0.1:5173
+03-03-2023 	 15:00:13	TokenExpiredError	jwt expired	GET	/cart/cart-history	http://127.0.0.1:5173
+02-03-2023 	 15:44:54	MongooseServerSelectionError	Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/	GET	/cart/cart-history	http://127.0.0.1:5173
+02-03-2023 	 15:44:54	MongooseServerSelectionError	Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/	GET	/cart/cart-history	http://127.0.0.1:5173
+02-03-2023 	 15:43:53	MongooseServerSelectionError	Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/	GET	/cart/cart-history	http://127.0.0.1:5173
+02-03-2023 	 15:43:41	MongooseServerSelectionError	Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/	GET	/cart/cart-history	http://127.0.0.1:5173
+02-03-2023 	 14:59:58	TokenExpiredError	jwt expired	GET	/cart/cart-history	http://127.0.0.1:5173
+28-02-2023 	 16:11:54	TypeError	Cart.findone is not a function	POST	/order/order-placed	http://127.0.0.1:5173
+28-02-2023 	 16:11:08	ReferenceError	Cart is not defined	POST	/order/order-placed	http://127.0.0.1:5173
+27-02-2023 	 15:43:59	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:43:58	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:42:52	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:42:25	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:42:25	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:42:18	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:42:08	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:41:24	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:40:35	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:40:28	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:37:37	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:37:12	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:37:08	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:36:45	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:35:49	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:35:48	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:35:18	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:48	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:47	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:42	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:42	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:36	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:35	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:34	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:30	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:27	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:24	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:15	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:33:13	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:32:35	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:32:00	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:31:33	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:31:33	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:31:29	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:31:29	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:31:09	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:31:08	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:31:07	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:31:06	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:30:53	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:30:53	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:30:35	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+27-02-2023 	 15:30:24	TypeError	Cannot read properties of null (reading 'products')	GET	/order/cart-history	http://127.0.0.1:5173
+26-02-2023 	 13:30:14	SyntaxError	Unexpected token " in JSON at position 0	DELETE	/order/cart-delete-single/63ea0c4b7a0109fe07bcd5b5	undefined
+26-02-2023 	 13:30:10	SyntaxError	Unexpected token 6 in JSON at position 0	DELETE	/order/cart-delete-single/63ea0c4b7a0109fe07bcd5b5	undefined
+26-02-2023 	 13:29:59	SyntaxError	Unexpected token " in JSON at position 1	DELETE	/order/cart-delete-single/63ea0c4b7a0109fe07bcd5b5	undefined
+26-02-2023 	 13:29:46	SyntaxError	Unexpected token " in JSON at position 1	DELETE	/order/cart-delete-single	undefined
+26-02-2023 	 13:27:15	SyntaxError	Unexpected token p in JSON at position 4	DELETE	/order/cart-delete-single	undefined
+26-02-2023 	 10:20:27	ReferenceError	result is not defined	POST	/order/add-to-cart	http://127.0.0.1:5173
+25-02-2023 	 16:05:11	TokenExpiredError	jwt expired	GET	/order/cart-history	undefined
+25-02-2023 	 15:43:50	JsonWebTokenError	invalid token	POST	/products/add-product	undefined
+25-02-2023 	 15:25:38	TokenExpiredError	jwt expired	DELETE	/order/cart-destroy	undefined
+25-02-2023 	 15:08:59	TokenExpiredError	jwt expired	GET	/order/cart-history	http://127.0.0.1:5173

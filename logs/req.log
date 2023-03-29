@@ -1,0 +1,12 @@
+ 27-03-2023 	 14:36:25	GET	/products	http://localhost:5173
+ 27-03-2023 	 14:36:25	GET	/products	http://localhost:5173
+ 27-03-2023 	 14:35:19	GET	/products	http://127.0.0.1:5173
+ 27-03-2023 	 14:35:19	GET	/products	http://127.0.0.1:5173
+ 24-03-2023 	 20:48:00	GET	/employee/stat	http://localhost:5173
+ 24-03-2023 	 20:47:59	POST	/auth/employee/login	http://localhost:5173
+ 24-03-2023 	 20:47:59	OPTIONS	/auth/employee/login	http://localhost:5173
+ 24-03-2023 	 20:47:46	GET	/order/order-history	http://localhost:5173
+ 24-03-2023 	 20:47:46	OPTIONS	/order/order-history	http://localhost:5173
+ 24-03-2023 	 20:47:46	PUT	/order/order-cancel/641dbecc7a5778a74c43f488	http://localhost:5173
+ 24-03-2023 	 20:47:46	OPTIONS	/order/order-cancel/641dbecc7a5778a74c43f488	http://localhost:5173
+ 24-03-2023 	 20:47:42	GET	/order/order-history	http://localhost:5173
