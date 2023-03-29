@@ -26,7 +26,8 @@ app.use(cors({
             "http://localhost:5000",
             "http://127.0.0.1:5173",
             "http://127.0.0.1:5174",
-            "http://localhost:5173"
+            "http://localhost:5173",
+            "https://railway-filpkart-clone-production.up.railway.app"
         ]
         if (allowed.indexOf(o) !== -1 || !o) {
             cb(null, true)
