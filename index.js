@@ -44,9 +44,10 @@ app.use("/api/auth", require("./routes/authRoute"))
 app.use("/api/products", require("./routes/productsRoute"))
 
 app.use("*", (req, res) => {
-    res.status(404).json({
-        message: " 404 : Resource You Are Looking For Is Not Awailable"
-    })
+    res.sendFile(path.join(__dirname, "dist/index.html"))
+    // res.status(404).json({
+    //     message: " 404 : Resource You Are Looking For Is Not Awailable"
+    // })
 })
 app.use(errorHandler)
 const PORT = process.env.PORT || 5000
