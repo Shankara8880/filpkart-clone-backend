@@ -1,12 +1,21 @@
 
 const asyncHandler = require("express-async-handler")
 const Cart = require("../models/Cart")
+const Product = require("../models/Product")
 
 exports.addToCart = asyncHandler(async (req, res) => {
     const { userId, qty, productId } = req.body
     if (!qty || !productId) {
         return res.status(400).json({
             message: "All Feild Required"
+        })
+    }
+
+    const result = await Product.findById(productId)
+    console.log("result", result);
+    if (result.stock < qty) {
+        return res.status(400).json({
+            message: "Please Provide Valid QTY"
         })
     }
     const cartItems = await Cart.findOne({ userId })

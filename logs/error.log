@@ -1,3 +1,11 @@
+30-03-2023 	 16:12:25	ReferenceError	i is not defined	POST	/api/order/payment	undefined
+30-03-2023 	 14:13:37	TypeError	Cannot read properties of null (reading 'stock')	POST	/api/cart/add-to-cart	undefined
+30-03-2023 	 14:13:11	TypeError	Cannot read properties of null (reading 'stock')	POST	/api/cart/add-to-cart	undefined
+30-03-2023 	 14:12:40	TypeError	Cannot read properties of null (reading 'stock')	POST	/api/cart/add-to-cart	undefined
+30-03-2023 	 14:10:24	TypeError	Cannot read properties of null (reading 'qty')	POST	/api/cart/add-to-cart	undefined
+30-03-2023 	 14:09:42	TypeError	Cannot read properties of null (reading 'stock')	POST	/api/cart/add-to-cart	undefined
+30-03-2023 	 14:08:09	TokenExpiredError	jwt expired	POST	/api/cart/add-to-cart	undefined
+30-03-2023 	 12:55:38	TokenExpiredError	jwt expired	DELETE	/api/order/destroy	undefined
 24-03-2023 	 15:45:20	Error	Cannot set headers after they are sent to the client	POST	/auth/user/login-with-google	http://localhost:5173
 24-03-2023 	 15:38:03	Error	Cannot set headers after they are sent to the client	POST	/auth/user/login-with-google	http://localhost:5173
 24-03-2023 	 15:35:29	Error	Cannot set headers after they are sent to the client	POST	/auth/user/login-with-google	http://localhost:5173

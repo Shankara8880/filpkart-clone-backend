@@ -20,21 +20,37 @@ exports.placeOrder = asyncHandler(async (req, res) => {
     }
     let productArray
     if (type === "buynow") {
+        const result = await Product.findById(req.body.productId)
+        if (result.stock < req.body.qty) {
+            return res.status(400).json({
+                message: "Qty is Too Large"
+            })
+        }
         productArray = [{
             productId: req.body.productId,
             qty: req.body.qty
-        }]
-        // for storing the data in db
+
+
+        }] // for storing the data in db
+        await Product.findByIdAndUpdate(req.body.productId, { $inc: { stock: -req.body.qty } })
     } else {
         const cartItems = await Cart.findOne({ userId })
         await Cart.deleteOne({ userId })
         productArray = cartItems.products
+        // reduce stock loop
+
+        cartItems.products.forEach(async item => {
+            await Product.findByIdAndUpdate(item.productId, { $inc: { stock: -item.qty } })
+        })
     }
     const result = await Order.create({
         userId,
         products: productArray,
         paymentMode: "cod"
     })      // for storing the data in db
+
+
+    // reduce stock
 
     res.json({
         message: "Order Placed SuccessFully",
@@ -83,25 +99,57 @@ exports.deleteAllOrders = asyncHandler(async (req, res) => {
 })
 
 exports.orderPayment = asyncHandler(async (req, res) => {
-    const instanse = new Razorpay({
-        key_id: process.env.RAZORPAY_KEY,
-        key_secret: process.env.RAZORPAY_SECRET
-    })
-    instanse.orders.create({
-        amount: req.body.amount * 100,
-        currency: "INR",
-        receipt: uuid()
-    }, (err, order) => {
-        if (err) {
-            return res.status(400).json({
-                message: "Order Fail " + err
-            })
-        }
-        res.json({
-            message: "Payment Initiated",
-            order
+    const { total, cart, type } = req.body
+    let err = []
+    let result
+    if (type === "cart") {
+        cart.forEach(async (item, i) => {
+            result = await Product.findById(item._id)
+            // console.log(result);
+            if (result.stock < item.qty) {
+                err.push({
+                    id: item._id,
+                    message: "qty missmatch"
+                })
+            }
+            if (i === cart.length - 1) {
+                if (err.length > 0) {
+                    return res.status(400).json({
+                        message: "qty is Too Large",
+                        err
+                    })
+                } else {
+                    return res.json({
+                        message: "ok",
+                        err
+                    })
+                }
+            }
         })
-    })
+    }
+
+
+
+
+    // const instanse = new Razorpay({
+    //     key_id: process.env.RAZORPAY_KEY,
+    //     key_secret: process.env.RAZORPAY_SECRET
+    // })
+    // instanse.orders.create({
+    //     amount: req.body.total * 100,
+    //     currency: "INR",
+    //     receipt: uuid()
+    // }, (err, order) => {
+    //     if (err) {
+    //         return res.status(400).json({
+    //             message: "Order Fail " + err
+    //         })
+    //     }
+    //     res.json({
+    //         message: "Payment Initiated",
+    //         order
+    //     })
+    // })
 })
 
 exports.verifyPayment = asyncHandler(async (req, res) => {
