@@ -51,9 +51,9 @@ exports.addToCart = asyncHandler(async (req, res) => {
 exports.getCartData = asyncHandler(async (req, res) => {
     const { userId } = req.body
     const result = await Cart.findOne({ userId: userId })
-        // .populate("products.productId", "-createdAt -updatedAt -__v -stock -employeeId -_id")
-        .populate("products.productId", "name price brand image category desc ")
-        .select(" -createdAt -updatedAt -__v -_id -userId")
+        .populate("products.productId", "-createdAt -updatedAt -__v -employeeId -_id")
+        // .populate("products.productId", "name price brand image category desc ")
+        .select("-createdAt -updatedAt -__v -_id -userId")
         .lean()
     if (!result) {
         return res.json({

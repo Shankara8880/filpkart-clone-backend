@@ -119,9 +119,24 @@ exports.orderPayment = asyncHandler(async (req, res) => {
                         err
                     })
                 } else {
-                    return res.json({
-                        message: "ok",
-                        err
+                    const instanse = new Razorpay({
+                        key_id: process.env.RAZORPAY_KEY,
+                        key_secret: process.env.RAZORPAY_SECRET
+                    })
+                    instanse.orders.create({
+                        amount: req.body.total * 100,
+                        currency: "INR",
+                        receipt: uuid()
+                    }, (err, order) => {
+                        if (err) {
+                            return res.status(400).json({
+                                message: "Order Fail " + err
+                            })
+                        }
+                        res.json({
+                            message: "Payment Initiated",
+                            order
+                        })
                     })
                 }
             }
@@ -131,25 +146,7 @@ exports.orderPayment = asyncHandler(async (req, res) => {
 
 
 
-    // const instanse = new Razorpay({
-    //     key_id: process.env.RAZORPAY_KEY,
-    //     key_secret: process.env.RAZORPAY_SECRET
-    // })
-    // instanse.orders.create({
-    //     amount: req.body.total * 100,
-    //     currency: "INR",
-    //     receipt: uuid()
-    // }, (err, order) => {
-    //     if (err) {
-    //         return res.status(400).json({
-    //             message: "Order Fail " + err
-    //         })
-    //     }
-    //     res.json({
-    //         message: "Payment Initiated",
-    //         order
-    //     })
-    // })
+
 })
 
 exports.verifyPayment = asyncHandler(async (req, res) => {

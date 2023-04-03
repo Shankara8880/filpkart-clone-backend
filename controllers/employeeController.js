@@ -199,6 +199,16 @@ exports.adminStat = asyncHandeler(async (req, res) => {
 })
 
 
+exports.adminSerch = asyncHandeler(async (req, res) => {
+    const { term } = req.query
+    const result = await User.find({
+        name: { $regex: term }
+    })
+    res.json({
+        message: "Users fetched  by specific name",
+        result
+    })
+})
 
 
 

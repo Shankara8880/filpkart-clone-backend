@@ -1,4 +1,4 @@
-const { registerEmployee, getAllEmployee, getSingleEmployee, UpdateEmployee, deleteEmployee, destroyEmployee, employeeProfile, adminGetAllUsers, adminUserStatus, adminStat } = require("../controllers/employeeController")
+const { registerEmployee, getAllEmployee, getSingleEmployee, UpdateEmployee, deleteEmployee, destroyEmployee, employeeProfile, adminGetAllUsers, adminUserStatus, adminStat, adminSerch } = require("../controllers/employeeController")
 
 const router = require("express").Router()
 
@@ -16,4 +16,7 @@ router
     .get("/users", adminGetAllUsers)
     .get("/stat", adminStat)
     .put("/users/status/:userId", adminUserStatus)
+
+
+    .get("/search", adminSerch)
 module.exports = router
